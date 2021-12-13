@@ -1,2 +1,2 @@
 # social-network-frontend
-social-network
+social-network-frontend
