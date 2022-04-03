@@ -19,7 +19,7 @@ import PostsContext from "./services/contexts/postsContext";
 import Loader from "./components/common/loader/loader";
 
 const App = () => {
-  const [user, setUser] = useState([]);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     async function getUser() {
