@@ -1,0 +1,132 @@
+.conversation {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.notificationChat {
+  transform: scale(1) translate(135%, -90%);
+  transform-origin: 100% 0%;
+  width: 20px !important;
+  height: 20px !important;
+  background-color: rgba(241, 32, 32, 0.66) !important;
+  border-radius: 50% !important;
+  color: #fff !important;
+  position: absolute !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.conversationImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  transition: all ease-in 0.3s !important;
+}
+
+.conversationImg:active {
+  transition: all ease-out 0.1s !important;
+  transform: scale(0.7) !important;
+  /* font-size: 30px; */
+}
+
+.conversationName {
+  font-size: 13px;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .conversationName {
+    display: none !important;
+  }
+  .conversationImg {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+  .notificationChat {
+    font-size: 0.5rem;
+    transform: scale(1) translate(90%, -70%);
+  }
+  .conversationName {
+    display: none !important;
+  }
+  .conversationImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 377px) and (max-width: 540px) {
+  .notificationChat {
+    border: none !important;
+    font-size: 0.5rem;
+    height: 15px !important;
+    width: 15px !important;
+    transform: scale(1) translate(130%, -90%);
+  }
+  .conversationName {
+    display: none !important;
+  }
+
+  .searchChat {
+    display: none !important;
+  }
+  .conversationImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 281px) and (max-width: 376px) {
+  .notificationChat {
+    border: none !important;
+    font-size: 0.5rem;
+    height: 15px !important;
+    width: 15px !important;
+    transform: scale(1) translate(130%, -90%);
+  }
+  .conversationName {
+    display: none !important;
+  }
+  .searchChat {
+    display: none !important;
+  }
+  .conversationImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px !important;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .notificationChat {
+    border: none !important;
+    font-size: 0.5rem;
+    height: 15px !important;
+    width: 15px !important;
+    transform: scale(1) translate(110%, -90%);
+  }
+  .conversationName {
+    display: none !important;
+  }
+  .conversationImg {
+    position: relative !important;
+    right: 3.5px !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}

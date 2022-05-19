@@ -1,0 +1,131 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.messageTop {
+  display: flex;
+}
+
+.messageImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.messageBottom {
+  font-size: 10px;
+  font-weight: 700;
+  color: gray;
+  margin-top: 10px;
+}
+
+.messageText {
+  background-color: rgb(245, 241, 241);
+  color: black;
+  padding: 10px !important;
+  border-radius: 20px !important;
+  max-width: 300px !important;
+}
+
+.message.own {
+  align-items: flex-end;
+}
+
+.message.own .messageText {
+  background-color: #1877f2 !important;
+  color: white !important;
+}
+
+@media screen and (max-width: 550px) {
+  .message .messageText {
+    font-size: 14px !important;
+  }
+
+  .message.own .messageText {
+    background-color: rgb(245, 241, 241);
+    color: black;
+    font-size: 14px !important;
+  }
+
+  .messageBottom {
+    font-size: 12px !important;
+  }
+  .messageUserName {
+    font-size: 13px !important;
+  }
+
+  /* .containerSendMessage {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 55px;
+  } */
+
+  .containerSendMessage .inputMessenger {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .message .messageText {
+    font-size: 14px !important;
+  }
+  .message.own .messageText {
+    background-color: rgb(245, 241, 241);
+    color: black;
+    font-size: 14px !important;
+  }
+
+  .messageBottom {
+    font-size: 12px !important;
+  }
+  .messageUserName {
+    font-size: 13px !important;
+  }
+  /* .containerSendMessage {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 90px;
+  } */
+
+  .containerSendMessage .inputMessenger {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .message .messageText {
+    font-size: 12px !important;
+  }
+  .message.own .messageText {
+    background-color: rgb(245, 241, 241);
+    color: black;
+    font-size: 12px !important;
+  }
+
+  .messageBottom {
+    font-size: 11px !important;
+  }
+  .messageUserName {
+    font-size: 12px !important;
+  }
+
+  /* .containerSendMessage {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 55px;
+  } */
+
+  .containerSendMessage .inputMessenger {
+    font-size: 10px !important;
+  }
+}
